@@ -1,0 +1,67 @@
+.search{
+    &-form{
+        @apply  flex w-full relative shadow-md;
+        span{
+            display: none;
+        }
+        label{ 
+            @apply flex-1;
+        } 
+        /* &::after { 
+            content: ''; 
+            background-image: url('../svg/search.svg');
+            background-size: contain; 
+            width: 22px;
+            height: 22px;
+            @apply absolute text-gray-500 z-10 ; 
+            right:1em;
+            top: 50%;
+            transform: translateY(-50%);
+            background-repeat: no-repeat; 
+        }  */
+        
+    }
+    &-field{ 
+        @apply w-full  text-gray-800 p-3 bg-white m-auto  ;  
+        outline: none;  
+        font-size: 18px;   
+        &::placeholder {
+            @apply text-gray-500;
+        }
+    }
+    &-submit{  
+        border: none;  
+        opacity: 1;   
+        @apply bg-heading text-transparent  bg-no-repeat cursor-pointer;
+        background-image: url('../svg/search.svg'); 
+        background-size: 25px;
+        background-position: center;
+    }
+    &-home{
+        --var: var(--header-height);
+        top: var(--var);
+        @apply hidden ;
+        &::before{
+            content: '';
+            @apply absolute z-10 -rotate-45 top-[-7px] left-5 ;
+            border-width: 7px;
+            border-color: white white transparent transparent ;
+        } 
+        &-active{
+            @apply block;
+        }
+    }
+    &-global{
+        --var: var(--header-height-global);
+        top: var(--var);
+    }
+    &-navigation{
+        @apply space-x-1  space-y-2 ;
+        & > [class *= "page-"]{
+            @apply px-3 py-2  border border-body inline-flex hover:bg-body hover:border-body   transition duration-200 ease-in-out hover:scale-90 active:scale-105 ;
+            &.current{
+                @apply bg-body border-body  ;
+            }
+        }
+    }
+} 

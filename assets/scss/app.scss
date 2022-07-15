@@ -1,0 +1,27 @@
+@import "~tailwindcss/base"; 
+@import "~tailwindcss/components";  
+@import "~tailwindcss/utilities";  
+// Custom styles 
+@import "lib/font";  
+@import "partials/base";
+@import "partials/variables";
+@import "partials/hacks"; 
+@import "lib/mixins";   
+
+@import "components/input";  
+@import "components/card";  
+@import "components/search-form"; 
+@import "components/form-newsletter"; 
+@import "components/social-media"; 
+
+@import "layout/header"; 
+@import "layout/footer"; 
+
+@import "pages/front-page";  
+@import "pages/page";  
+@import "pages/single";  
+@import "pages/contact";  
+@import "pages/store";  
+@import "pages/biooil";  
+ 
+

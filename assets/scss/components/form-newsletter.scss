@@ -1,0 +1,25 @@
+#mailpoet_form_2 form.mailpoet_form{
+    & .mailpoet_paragraph{
+        @apply m-0;
+    }
+    .mailpoet_form_columns{
+        @apply  flex space-x-2 flex-nowrap #{!important};
+        .mailpoet_form_column:nth-child(1){  
+           
+        }
+        .mailpoet_form_column:nth-child(2){
+            @apply flex-auto flex-grow flex-1 #{!important};   
+        }
+        .mailpoet_form_column{ 
+            input{
+                @apply h-[50px] sm:h-[64px] #{!important};
+            }
+            .mailpoet_text{
+               @apply w-full sm:w-[200px] md:w-[280px]  lg:w-[435.5191px]  bg-white px-4 py-3 placeholder-heading  md:text-[18.62px]  tracking-wider #{!important};
+            }
+           .mailpoet_submit{
+                @apply bg-heading  cursor-pointer justify-center  text-white text-center sm:text-[19.34px] tracking-wider px-5 sm:px-[50px] py-3   inline-flex #{!important};
+            }
+        }
+    }
+}

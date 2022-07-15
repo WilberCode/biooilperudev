@@ -1,0 +1,12 @@
+.input[type="checkbox"]{
+  appearance: auto;
+}
+
+.br-lg{
+  br{
+    @apply  maxlg:hidden;
+  }
+}
+
+
+

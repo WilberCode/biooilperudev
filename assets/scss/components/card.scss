@@ -1,0 +1,32 @@
+.card{
+    @apply   w-full sm:max-w-[380px] mx-auto  flex flex-col ;
+    img{
+        @apply  object-cover object-center ;
+    }
+    &-body{
+      /*   @apply  pt-[20px] sm:pt-[48px] pb-[22px]  sm:pb-[22px]   text-heading space-y-3 ; */
+        @apply  pt-[20px] sm:pt-6 pb-[20px]  sm:pb-[22px]   text-heading space-y-3 ;
+        h2{
+            @apply  lg:text-[25px]  xl:text-[28.11px] sm:tracking-[2px]  leading-snug lg:leading-[35.47px]  sm:pr-6 md:pr-10 lg:pr-10  ;
+        }
+       
+    }
+    &-footer{
+      @apply mt-auto;
+        button{
+            @apply maxsm:text-[11px] lg:text-[15.21px] leading-[22.5px] text-white bg-primary-500 px-3 py-2 font-bold  tracking-[0.60px] inline-flex mt-auto;
+        }
+    }
+}
+/* .card{
+    @apply bg-body w-full sm:max-w-[380px] mx-auto ;
+    &-body{
+        @apply px-3 sm:px-[1.8rem] pt-[20px] sm:pt-[37.32px] pb-[40px]  sm:pb-[34.2px] text-center text-heading space-y-3;
+        h2{
+            @apply text-sm  sm:text-[18.61px] lg:text-[18.61px]  text-primary-500 tracking-widest uppercase ;
+        }
+        p{
+            @apply text-[15px] lg:text-[23.69px] tracking-[2px];
+        }
+    }
+} */

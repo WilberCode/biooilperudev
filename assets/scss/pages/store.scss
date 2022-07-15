@@ -1,0 +1,16 @@
+.bio{
+    &-link{
+        position: absolute;
+        @apply top-0 bottom-0 h-full z-30 ; 
+        width:50%;
+        
+        &--60{
+            left: 0;
+            
+        }
+        &--100{
+            right: 0;
+        }
+    
+    }
+ }

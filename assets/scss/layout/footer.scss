@@ -1,0 +1,48 @@
+
+.footer{ 
+    &-info{
+        p{
+            @apply   text-xs font-medium text-justify text-white tracking-wider;
+        }
+    }
+    &-nav{
+
+    }
+    &-menu,& > ul{
+        @apply grid grid-cols-3 gap-4 ; 
+        @screen maxmd{
+            @apply grid-cols-2  ; 
+        }
+        @screen maxsm{
+            @apply grid-cols-1  ; 
+        }
+        &>.menu-item, & > li{
+              @apply block ml-6 ;
+              @screen maxlg {
+                @apply ml-3  ;
+              }
+              &:hover .sub-menu{
+                  display: block;
+              }
+              &:hover  a::before{
+                @apply block; 
+              }
+           & > a{
+                @apply  text-lg font-semibold  ; 
+            }
+           & >.sub-menu{ 
+               @apply mt-6;
+                li{
+                    a{
+                       @apply text-white mb-2  block  text-sm; 
+                    }
+                }
+            }
+        }  
+        & .current-menu-item{
+            a::before{
+                @apply block #{!important}; 
+           }
+        }
+    }
+}

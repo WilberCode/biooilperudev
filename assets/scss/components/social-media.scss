@@ -1,0 +1,58 @@
+.social-media{ 
+    &-menu{ 
+        @apply flex items-center my-0 justify-center #{!important} ;
+        li{
+            a{
+                @apply block text-transparent ;  
+                background-size: contain;
+                background-repeat: no-repeat; 
+                background-position: center;  
+                font-size: 0px; 
+            } 
+        }
+    } 
+}    
+
+.main-social{
+    .social-media{   
+            &-menu{ 
+                @apply  space-x-2 sm:space-x-[20px]  #{!important} ;
+                li{
+                    a{ 
+                        background-image: url('../svg/facebook.svg');   
+                        @apply  w-7  h-7  sm:w-[49.25px]   sm:h-[49.25px]; 
+                    }
+                    &.facebook a{ 
+                        background-image: url('../svg/facebook.svg');  
+                        background-position: right;  
+                    }
+                    &.instagram a{
+                        background-image: url('../svg/instagram.svg');  
+                    } 
+                }
+            } 
+    }
+}
+ 
+.footer-social{
+     .social-media{   
+            &-menu{ 
+                @apply  space-x-2 sm:space-x-[48px]  #{!important} ;
+                li{
+                    a{ 
+                        background-image: url('../svg/facebook-black.svg');   
+                        @apply  w-6  h-6  sm:w-[31.25px]   sm:h-[29px]; 
+                    }
+                    &.facebook a{ 
+                        background-image: url('../svg/facebook-black.svg');  
+                        background-position: left;  
+                    }
+                    &.instagram a{
+                        background-image: url('../svg/instagram-black.svg');  
+                    } 
+                }
+            } 
+    }
+}
+
+ 

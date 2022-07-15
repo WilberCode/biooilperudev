@@ -1,0 +1,61 @@
+.blog{
+    &-post{
+        @apply lg:text-[23.69px] space-y-5 text-heading ;
+        h1{
+            @apply lg:text-[49.31px] text-center leading-[1] text-primary-500 pb-4;
+        }
+        h2{
+            @apply text-lg sm:text-[23.69px]  text-heading font-bold;
+        }
+        ul,ol{
+            @apply text-current list-inside ;
+
+        }
+        ul{
+            @apply list-disc ;
+        }
+        ol{ 
+             @apply list-decimal;
+             li::marker{
+                 @apply font-bold;
+             } 
+        }
+        em{
+            @apply italic;
+        }
+        figure{
+            @apply py-2;
+            figcaption{
+                @apply sm:text-[17px] text-center  ;
+            }
+        }  
+        .wp-block-image:nth-of-type(1) figure{
+            @apply pt-0; 
+        }
+        a{
+            @apply text-primary-500;
+            &:hover{
+               @apply underline;
+           }
+        }
+    }
+    &-sidebar{
+        .recent{
+            a{ 
+                @apply flex space-x-3 items-start border-b border-line py-4 hover:underline hover:text-primary-500;
+                figure {
+                    @apply w-full max-w-[80px] flex-grow ; 
+                }
+                section {
+                    @apply flex-grow leading-3;
+                   /*  p{
+                        @apply uppercase my-0 mb-[5px] leading-[1] text-primary-500 no-underline ;
+                    } */
+                    h3{
+                        @apply text-xl inline-flex leading-[1.2] tracking-tight;
+                    }
+                }
+            }
+        }
+    }
+}

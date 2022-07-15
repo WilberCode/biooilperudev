@@ -1,0 +1,18 @@
+.biooil{
+    &-section{
+        @apply py-8  border-t-[.5px] border-line ;
+       
+        &-body{
+            @apply   sm:px-4 md:px-[53px] sm:flex sm:space-x-[30px]  md:space-x-[100px] maxsm:space-y-5 ;
+            h2{
+                @apply mt-[4px]  text-[24px] sm:text-[36.29px] text-primary-500 leading-tight;
+            }
+            h3{
+                @apply sm:text-[26.36px] text-primary-500 mt-8 leading-snug;
+            } 
+        }
+        p{
+            @apply md:text-[16px] leading-[25.22px] my-0 tracking-[0.40px] ;
+        }
+    }
+}

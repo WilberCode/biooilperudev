@@ -1,0 +1,20 @@
+:root{
+    // Colors
+    --primary:#FF4300;
+    --secondary:#FF4300;
+    --header-height: 104px; 
+    @screen maxmd {
+        --header-height: 80px;
+    }
+    @screen maxsm {
+        --header-height: 60px;
+    }
+ 
+}
+
+$primary:#FF4300;
+$secondary:#FF4300;
+
+.container{
+@apply m-auto;
+}

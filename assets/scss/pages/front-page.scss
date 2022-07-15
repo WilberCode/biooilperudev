@@ -1,0 +1,85 @@
+ 
+.home{
+    &-banner{
+      
+        .metaslider {
+            .flexslider{
+                .slides{
+                    li{
+                        img{
+                           @apply w-full md:max-w-[1200px] ;
+                        }
+                    }
+                }
+            } 
+            .flex-control-paging{ 
+                li a{
+                    &:not(.flex-active){
+                        @apply  bg-[#BCBEC0];
+                    }
+                    @apply sm:w-[15.04px] sm:h-[15.04px] ;
+                }
+            }
+            & .flex-direction-nav{
+                @apply pt-2 #{!important};
+            }
+            .flex-direction-nav{
+                .flex-nav-prev{
+                    a{
+                        @apply left-4;
+                    }
+                }
+                .flex-nav-next{
+                    a{
+                        @apply right-4;
+                    }
+                }
+            }
+           
+           
+        }
+        
+    }
+    &-assessment{
+        p{
+            @apply text-[17px] sm:text-[20.91px] leading-[26.94px] font-medium text-[#58595B] tracking-wide my-0;
+            br{
+                @apply maxsm:hidden;
+            }
+            img{
+                @apply mt-4;
+                @screen maxmd{
+                    @apply w-[90px] #{!important};
+
+                }
+            }
+        }
+        .sa_hover_container{
+            @apply min-h-full #{!important};
+        }
+    }
+    &-follow-us{
+        &, h3{
+            @apply max-w-[200px]  sm:max-w-[145px] mx-auto lg:text-3xl leading-7 text-primary-500 font-medium sm:mt-4 ;
+            @screen maxmd{
+                br{
+                    @apply hidden;
+                }
+            }
+        }
+    }
+    &-suscribe{
+        @apply text-heading text-center tracking-wide ;
+        h3{
+            @apply  leading-[30px] lg:leading-[35.23px] lg:text-[30.99px]   mx-auto   font-bold; 
+        }
+        p{
+            @apply leading-[28.62px] lg:text-[25.18px]  mb-0 mt-3  ;
+
+        }
+    }
+}
+
+/* purgecss start ignore */
+ /* body{} */
+/* purgecss end ignore */
